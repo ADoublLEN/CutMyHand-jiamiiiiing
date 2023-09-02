@@ -1,6 +1,7 @@
 const data = {
   products: [
     {
+      _id: '1',
       name: 'AM65Less',
       slug: 'am65less',
       category: '65',
@@ -13,18 +14,20 @@ const data = {
       description: 'A AM65less keyboard',
     },
     {
+      _id: '2',
       name: 'Space65',
       slug: 'space65',
       category: '65',
       image: '/images/space65.jpg',
       price: 300,
-      countInStock: 1,
+      countInStock: 100,
       brank: 'Gray Studio',
       rating: 4.5,
       numReviews: 14,
       description: 'A Space65 keyboard',
     },
     {
+      _id: '3',
       name: 'meta75',
       slug: 'meta75',
       category: '80',
@@ -37,6 +40,7 @@ const data = {
       description: 'A Meta75 keyboard',
     },
     {
+      _id: '4',
       name: 'Am AFA',
       slug: 'am-afa',
       category: '75',
