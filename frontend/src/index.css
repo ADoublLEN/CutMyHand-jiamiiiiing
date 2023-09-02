@@ -17,3 +17,31 @@ header a {
   font-weight: bold;
   text-decoration: none;
 }
+
+main {
+  padding: 1rem;
+}
+
+.products {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.product {
+  border: 1px #404040 solid;
+  width: 200px; /* 或你想要的任何尺寸 */
+  height: 300px; /* 或你想要的任何尺寸 */
+  overflow: hidden; /* 隐藏超出的部分 */
+  margin: 1rem;
+}
+.product img {
+  width: 100%;
+  height: 50%;
+  object-fit: cover; /* 使图片填满容器但不失真 */
+  max-width: 400px;
+}
+
+.product-info {
+  padding: 1rem;
+}
