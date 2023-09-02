@@ -10,9 +10,12 @@ body {
   min-height: 100vh;
 }
 main {
-  flex: 1rem;
+  flex: 1;
 }
-
+.btn.btn-primary {
+  background-color: black;
+  color: white;
+}
 .products {
   display: flex;
   flex-wrap: wrap;
