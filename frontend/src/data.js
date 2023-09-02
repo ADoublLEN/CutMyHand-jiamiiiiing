@@ -6,7 +6,7 @@ const data = {
       category: '65',
       image: '/images/am65.jpg',
       price: 400,
-      countInStock: 1,
+      countInStock: 100,
       brank: 'Angry Miao',
       rating: 4.5,
       numReviews: 10,
