@@ -1,13 +1,11 @@
-import { useEffect, useReducer, useState } from 'react';
+import { useEffect, useReducer } from 'react';
 import axios from 'axios';
 import logger from 'use-reducer-logger';
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
+import { Container, Row, Col, Card } from 'react-bootstrap'; // 引入Bootstrap组件
 import Product from '../components/Product';
 import { Helmet } from 'react-helmet-async';
 import LoadingBox from '../components/LoadingBox';
 import MessageBox from '../components/MessageBox';
-// import data from '../data';
 
 const reducer = (state, action) => {
   switch (action.type) {
@@ -44,11 +42,24 @@ function HomeScreen() {
     fetchData();
   }, []);
   return (
-    <div>
+    <Container fluid>
       <Helmet>
         <title>CutMyHand</title>
       </Helmet>
-      <h1>Popular ones</h1>
+
+      <Card className="mt-4 mb-4 bg-light">
+        {' '}
+        {/* 使用Card组件展示主标题 */}
+        <Card.Body>
+          <Card.Title>
+            <h1>Popular ones</h1>
+          </Card.Title>
+          <Card.Text>
+            Discover our most popular products and find something you'll love!
+          </Card.Text>
+        </Card.Body>
+      </Card>
+
       <div className="products">
         {loading ? (
           <LoadingBox />
@@ -64,7 +75,7 @@ function HomeScreen() {
           </Row>
         )}
       </div>
-    </div>
+    </Container>
   );
 }
 export default HomeScreen;
